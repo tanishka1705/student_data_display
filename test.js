@@ -93,7 +93,7 @@ function getDetails(event) {
 
   document.getElementById("uForm").reset();
 }
-//delete first then save to localstorage
+
 
 function deleteRow(button) {
     const delRow = button.parentNode.parentNode;
