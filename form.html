@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <script src="test.js" defer></script>
+    <title>Enter Your Details</title>
+  </head>
+  <body>
+    <div class="form-div">
+      <form id="uForm">
+        <h2 style="text-align: center; margin-bottom: 40px">
+          Enter Your Details
+        </h2>
+
+        <div class="box">
+          <label>Select image:</label>
+          <input class="txtbox" type="text" id="img" name="img" value="https://cdn.pixabay.com/photo/2015/03/04/22/35/head-659652__340.png"/>
+        </div>
+
+        <div class="box">
+          <label>Enter Your Name </label>
+          <input class="txtbox" type="text" id="name" placeholder="   Name" required/>
+        </div>
+
+        <div class="box">
+          <label>Batch</label>
+          <input class="txtbox" type="text" id="batch" placeholder="   Batch" required/>
+        </div>
+
+        <div class="box">
+          <label>DSA Score</label>
+          <input class="txtbox" type="number" id="dsaScore" placeholder="  DSA Score" required/>
+        </div>
+
+        <div class="box">
+          <label>Skillathon Score</label>
+          <input class="txtbox" type="number" id="skillScore" placeholder="  Skillathon Score" required/>
+        </div>
+
+        <div class="box">
+          <label>Coding Score</label>
+          <input class="txtbox" type="number" id="codingScore" placeholder="  Coding Score" required/>
+        </div>
+
+        <div class="box">
+          <input class="btn" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+
+    <div class="table-div">
+      <h2 style="text-align: center; margin-bottom: 15px">
+        Student Data Table
+      </h2>
+      <table id="display-table">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Batch</th>
+            <th>DSA Score</th>
+            <th>Skillathon Score</th>
+            <th>Coding Score</th>
+            <th>Percentage</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="table-body">
+        
+        </tbody>
+
+      </table>
+    </div>
+  </body>
+</html>
